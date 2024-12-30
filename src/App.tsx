@@ -1,10 +1,8 @@
-import "./app.sass";
-import RingPics from "./pages/ui/RingPics";
-
+import Pages from "./pages/index";
 function App() {
   return (
     <div className="app">
-      <RingPics />
+      <Pages />
     </div>
   );
 }

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { genUUid } from "../../utils/gen";
+import { genUUid } from "@/utils/gen";
 import { useState, useMemo, useEffect } from "react";
 
 const imgs = Array(10)
@@ -42,13 +42,14 @@ function RingPics() {
 
   // 计算容器的旋转角度
   const rotation = useMemo(() => `rotateY(${cur * (360 / n)}deg)`, [cur]);
+
   useEffect(() => {
     return () => {
-      console.log("innn");
       setCur(0);
       setCurIndex(0);
     };
   }, []);
+  
   return (
     <section style={{ perspective: 1000 }}>
       <Container style={{ transform: rotation }}>
