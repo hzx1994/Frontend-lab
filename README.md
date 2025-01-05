@@ -11,8 +11,9 @@
 
 ## Todo
 
-- [x] 卡片翻转动效
-- [x] eventlistener 中状态因为闭包导致状态不更新的最佳解决办法
+- [x] 日常开发中状态因为闭包导致状态不更新的最佳解决办法
+- [ ] 卡片翻转动效
+- [ ] 首页切换组件模块优化，添加 desc 描述
 
 ## 目录
 
@@ -22,4 +23,5 @@
 
 ### react----一些 react 用法
 
-- use-immer react 官网推荐修改复杂状态用法
+- UseImmer react 官网推荐修改复杂状态用法 use-immer
+- ClosureState 业务中经常遇到的由于闭包 state 不更新问题
